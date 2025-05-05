@@ -3,6 +3,7 @@ import Header from "./components/Header"
 import Intro from "./components/Intro"
 import About from "./components/About"
 import Subscription from './components/Subscription'
+import EmailSub from './components/EmailSub'
 
 const Introduction = () => {
   return (
@@ -18,6 +19,7 @@ const Introduction = () => {
      
      </div>
      <Subscription/>
+     <EmailSub/>
     </div>
   )
 }
