@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from "next/image"
+import Link from 'next/link'
 
 const About = () => {
   return (
@@ -9,25 +10,60 @@ const About = () => {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
             {/* Text Content */}
             <div className="md:w-1/2">
-              <h2 className="text-2xl md:text-3xl font-bold text-indigo-900 mb-4">
-              Mit Tracking und Cookies nutzen
-              </h2>
-              <p className="text-gray-700 mb-6">
-              Nutzen Sie BILD.de mit Tracking und Cookies und damit einschließlich personalisierter Werbung. Details zu Datenverarbeitungen, eingesetzten Drittanbietern und Tracking-Technologien wie Cookies sowie zur Übermittlung in Drittländer finden Sie unten sowie in
-              </p>
-              <a 
-                href="#" 
-                className="inline-block bg-red-500 hover:bg-red-600 text-white font-medium px-6 py-3 rounded-full transition-colors duration-200 shadow-sm"
+            <h2 className="text-2xl md:text-3xl font-bold text-indigo-900 mb-4">
+              Nutrition Built for <span className="text-indigo-600">You</span>  
+            </h2>
+            <p className="text-gray-700 mb-6 space-y-4">  
+              <span className="block">
+                <span className="font-semibold text-indigo-800">Personalized meal plans</span>—crafted for your weight, 
+                diet (vegan, keto, gluten-free), and activity level (MMA, workouts, etc.).  
+              </span>
+              <span className="block">
+                <span className="font-semibold text-indigo-800">Flexible & adaptive</span>—choose 3, 5, or 6 meals/day 
+                and update plans with one click when goals shift.  
+              </span>
+              <span className="block">
+                <span className="font-semibold text-indigo-800">Smart grocery lists</span>—auto-generated with exact 
+                quantities (<i>“1.4kg chicken breast, 420g oats”</i>) and easy ingredient swaps.  
+              </span>
+            </p>
+              
+              <div className="flex flex-row gap-3">
+              <Link
+                href="https://apps.apple.com/app/idXXXXXXXXX"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                More...
-              </a>
+                <Image
+                  className="mt-5"
+                  src="/2.png"
+                  alt="Download on the App Store"
+                  width={160}
+                  height={50}
+                />
+              </Link>
+              <Link
+                href="https://play.google.com/store/apps/details?id=XXXXXXXXX"
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <Image
+                className="mt-5"
+                src="/1.png"
+                alt='Download the googleplay'
+                width={160}
+                height={50}
+                
+                />
+              </Link>
+              </div>
             </div>
-            
+
             {/* Image Area */}
             <div className="md:w-1/2 relative">
               {/* Decorative Background */}
               <div className="absolute -z-10 right-0 bottom-0 w-3/4 h-3/4 bg-green-400 rounded-full opacity-70"></div>
-              
+
               {/* Decorative Elements */}
               <div className="hidden sm:flex absolute top-8 right-8 flex-col gap-2 z-10">
                 <div className="flex gap-2">
@@ -47,11 +83,11 @@ const About = () => {
 
               {/* Child image */}
               <Image
-                src="/bb-bg.png" 
-                alt="dash" 
+                src="/phone.png"
+                alt="dash"
                 className="relative z-0 w-full max-w-md h-auto rounded-lg object-cover"
-                width={400}
-                height={400}
+                width={300}
+                height={900}
               />
             </div>
           </div>
@@ -60,31 +96,40 @@ const About = () => {
             <div className="md:w-1/2 relative order-2 md:order-1">
               {/* Decorative Background */}
               <div className="absolute -z-10 left-0 bottom-0 w-3/4 h-3/4 bg-purple-400 rounded-full opacity-70"></div>
-              
+
               {/* Child image */}
-              <Image 
-                src="/bb-bg.png" 
-                alt="dashh" 
+              <Image
+                src="/phone.png"
+                alt="dashh"
                 className="relative z-0 w-full max-w-md h-auto rounded-lg object-cover"
                 width={400}
                 height={400}
               />
             </div>
-            
+
             {/* Text Content */}
             <div className="md:w-1/2 order-1 md:order-2">
-              <h2 className="text-2xl md:text-3xl font-bold text-indigo-900 mb-4">
-              dafür mit Tracking und Cookies
-              </h2>
-              <p className="text-gray-700 mb-6">
-              Mit Tracking und Cookies nutzen: Wenn Sie sich dafür entscheiden, unser Angebot kostenfrei, dafür mit Tracking und Cookies zu nutzen, verarbeiten wir und bis zu 279 von uns eingesetzte Drittanbieter personenbezogene Daten zu den nachstehenden Verarbeitungszwecken. Dabei werden auch Nutzungsprofile (u.a. auf Basis von Cookie-IDs) erstellt, mit Daten von anderen Webseiten angereichert und auch außerhalb des EWR verarbeitet.  
-              Indem Sie auf "Alle akzeptieren" klicken, willigen Sie in die Verarbeitungszwecke und die Übermittlung an die Drittanbieter ein. Dies umfasst auch Ihre Einwilligung in die Übermittlung bestimmter personenbezogener Daten in Drittländer, u.a. die USA, nach Art. 49 (1) (a) DSGVO. Drittländer weisen ggf. kein adäquates Datenschutzniveau entsprechend der DSGVO auf. Dies kann eine erschwerte Durchsetzung von Betroffenenrechten, fehlende Kontrolle der Weiterverarbeitung und Datenübermittlung sowie Zugriffe staatlich
-              </p>
-              <a 
-                href="#" 
-                className="inline-block bg-red-500 hover:bg-red-600 text-white font-medium px-6 py-3 rounded-full transition-colors duration-200 shadow-sm"
+            <h2 className="text-2xl md:text-3xl font-bold text-indigo-900 mb-4">
+            AI Tools for Smarter <span className="text-indigo-600">Decisions</span>  
+            </h2>
+            <p className="text-gray-700 mb-6 space-y-4">  
+              <span className="block">
+                <span className="font-semibold text-indigo-800">24/7 AI Dietician Chat:</span>Ask questions like “What’s a high-protein snack?” or scan food photos for instant calorie estimates.
+              </span>
+              <span className="block">
+                <span className="font-semibold text-indigo-800">Dine Out Stress-Free:</span>Scan restaurant menus for <i>"Top 3 macro-friendly picks at Chipotle"</i> or optimize cheat meals.
+              </span>
+              <span className="block">
+                <span className="font-semibold text-indigo-800">Quick AI Recipes:</span>Fuel busy days with <i>“30-min MMA Fighter Meals”</i> or <i>"5-Ingredient Post-Workout Snacks"</i> easy ingredient swaps.
+              </span>
+            </p>
+              <a
+                href="https://apps.apple.com/app/idXXXXXXXXX"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-black text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-gray-800 transition duration-200"
               >
-                More...
+                Download on the App Store
               </a>
             </div>
           </div>

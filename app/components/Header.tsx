@@ -13,12 +13,12 @@ const Header: React.FC<HeaderProps> = ({
   buttonText = "Sign In",
 }) => {
   return (
-    <header className="w-full h-16 flex justify-between items-center px-9 bg-white shadow ">
+    <header className="w-full h-16 flex justify-between items-center px-10 bg-white                                shadow ">
       <div className="text-xl font-bold ml-[-20px]"><Image src={"/gain-logo-bg.png"} height={100} width={100} alt="logo" /></div>
       <nav>
         <ul className="flex gap-9">
           {navLinks.map((link, index) => (
-            <li key={index} className="text-gray-700 cursor-pointer hover:text-second">
+            <li key={index} className="text-gray-700 cursor-pointer hover:text-first">
               {link}
             </li>
           ))}
