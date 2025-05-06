@@ -24,7 +24,7 @@ const Header: React.FC<HeaderProps> = ({
           ))}
         </ul>
       </nav>
-      <div className="bg-grayd button hover:bg-first ">Sign In</div>
+      <div className="bg-grayd button hover:bg-first ml-[20px]">Sign In</div>
     </header>
   );
 };
